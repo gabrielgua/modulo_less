@@ -1,0 +1,89 @@
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.fs-1 {
+  font-size: 1em;
+}
+.list-style-none {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #192a56;
+  color: #f5f6fa;
+}
+.container {
+  width: min(960px, 80%);
+  margin-inline: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  place-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+header .profile-avatar {
+  display: block;
+  margin-inline: auto;
+  border-radius: 50%;
+  margin-block-end: 2rem;
+}
+.profile-bio-name {
+  font-size: 1.5em;
+  margin-block-end: 0.25rem;
+}
+.profile-bio-subtitle {
+  font-size: 1em;
+  margin-bottom: 1rem;
+  font-weight: normal;
+  opacity: 0.9;
+}
+.profile-bio-description {
+  font-size: 1em;
+  opacity: 0.8;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: min(280px, 100%);
+  margin-inline: auto;
+}
+.social-links li {
+  list-style: none;
+}
+.social-links li img:hover {
+  transition: scale 150ms ease;
+  scale: 1.1;
+}
+.projects-list {
+  display: grid;
+  gap: 1rem;
+  margin-block-start: 2rem;
+}
+.projects-list-item {
+  list-style: none;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #0097e6;
+  color: #f5f6fa;
+  display: block;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  text-align: center;
+}
+.projects-list-item a:hover {
+  transition: all 100ms ease;
+  background-color: transparent;
+  outline: 2px solid #0097e6;
+  color: #0097e6;
+}

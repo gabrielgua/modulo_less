@@ -1,0 +1,127 @@
+@import "maps.less";
+// @breakpointMobile: ~"(max-width: 767px)";
+// @breakpointMedium: ~"(min-width: 768px) and (max-width: 1023px)";
+
+.mb-1 {
+    margin-bottom: 1rem; 
+}
+
+.fs-1 {
+    font-size: 1em;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #colors[bgColor];
+    color: #colors[textColor];
+}
+
+.container {
+    width: min(960px, 80%);
+    margin-inline: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // @media @breakpointMobile {
+    //     background-color: red;
+    // }
+
+    // @media @breakpointMedium {
+    //     max-width: 80%;
+    // }
+}
+
+header {
+    place-items: center;
+    padding: 2rem;
+    text-align: center;
+
+    .profile-avatar {
+        display: block;
+        margin-inline: auto;
+        border-radius: 50%;
+        margin-block-end: 2rem;
+    }
+
+}
+
+.profile-bio {
+    &-name {
+        font-size: 1.5em;
+        margin-block-end: .25rem;
+    }
+
+    &-subtitle {
+        .fs-1();
+        .mb-1();
+        font-weight: normal;
+        opacity: .9;
+    }
+
+    &-description {
+        .fs-1();
+        opacity: .8;
+    }
+
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width: min(280px, 100%);
+    margin-inline: auto;
+
+    li {
+        .list-style-none();
+    
+        img {
+            &:hover {
+                transition: scale 150ms ease;
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+.projects-list {
+    display: grid;
+    gap: 1rem;
+    margin-block-start: 2rem;
+
+    &-item {
+        .list-style-none();
+
+        a {
+            text-decoration: none;
+            background-color: #colors[primaryColor];
+            color: #colors[textColor];
+            display: block;
+
+            padding: 1.5rem;
+            border-radius: 5rem;
+            text-align: center;
+            
+
+
+            &:hover {
+                transition: all 100ms ease;
+                background-color: transparent;
+                outline: 2px solid #colors[primaryColor];
+                color: #colors[primaryColor];
+            }
+        }
+    }
+}
