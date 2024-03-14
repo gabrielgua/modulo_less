@@ -27,7 +27,7 @@ body {
 }
 header {
   place-items: center;
-  padding: 2rem;
+  padding-inline: 2rem;
   text-align: center;
 }
 header .profile-avatar {
@@ -49,6 +49,7 @@ header .profile-avatar {
 .profile-bio-description {
   font-size: 1em;
   opacity: 0.8;
+  margin-bottom: 1rem;
 }
 .social-links {
   display: flex;
